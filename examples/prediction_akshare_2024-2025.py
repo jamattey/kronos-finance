@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # 添加项目路径以便导入自定义模块
-sys.path.append("../")
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from model import Kronos, KronosTokenizer, KronosPredictor
 
 # 设置中文字体
