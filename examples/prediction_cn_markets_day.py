@@ -27,8 +27,9 @@ import time
 import pandas as pd
 import akshare as ak
 import matplotlib.pyplot as plt
+import os
 import sys
-sys.path.append("../")
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from model import Kronos, KronosTokenizer, KronosPredictor
 
 save_dir = "./outputs"
